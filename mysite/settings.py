@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'polls.apps.PollsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -73,6 +74,7 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
+# 다른 데이터베이스를 사용하고 싶다면 아래의 데이터 베이스 내용을 바꿔 줍니다.
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
